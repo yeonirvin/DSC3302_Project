@@ -6,8 +6,8 @@ from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
 from statsmodels.tsa.arima.model import ARIMA
 
 # Modify file paths based on OS
-file_path = "/Users/yeonirvin/Desktop/DSC3302 Project/Historical Data.xlsx"  # Adjust this path
-output_path = "/Users/yeonirvin/Desktop/DSC3302 Project/ARIMA_Forecast_All_Products.xlsx"
+file_path = "/Users/yeonirvin/Desktop/DSC3302_Project/Historical Data.xlsx"  # Adjust this path
+output_path = "/Users/yeonirvin/Desktop/DSC3302_Project/ARIMA_Forecast_All_Products.xlsx"
 
 # Load historical data
 df = pd.read_excel(file_path, sheet_name="Historical Raw Data")
