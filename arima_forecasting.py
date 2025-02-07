@@ -71,7 +71,7 @@ for product_id in product_ids:
     forecast = model_fit.forecast(steps=forecast_steps)
 
     # Create forecasted date range
-    forecast_dates = pd.date_range(start=df_product["Date"].max(), periods=forecast_steps + 1, freq="ME")[1:]
+    forecast_dates = pd.date_range(start=df_product["Date"].max(), periods=forecast_steps + 1, freq="M")[1:]
 
     # Create forecast DataFrame
     forecast_df = pd.DataFrame({
